@@ -57,7 +57,7 @@
         $.getJSON(query,function(json){
             console.log(JSON.stringify(json));
 
-            let iconurl = "http://openweathermap.org/img/w/" + json.weather[0].icon + ".png";
+            let iconurl = "https://openweathermap.org/img/w/" + json.weather[0].icon + ".png";
 
             $('#loc').text(json.name);
             $('#temp').text(json.main.temp);
